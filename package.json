@@ -4,7 +4,7 @@
   "description": "Rest yt By OTSEE",
   "main": "index.js",
   "scripts": {
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist -t"
   },
   "keywords": [
     "rest yt"
