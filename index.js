@@ -12,8 +12,8 @@ http.createServer(function (req, res) {
         "Access-Control-Allow-Origin": "*",
         "content-type": "text/plain"
     });
-    if (req.url.split("/?get=")[1] == undefined == false && isUrl(req.url.split("/?get=")[1]) == true && req.method === "GET") {
-      let linkYt=req.url.split("/?get=")[1];
+    if (req.url.split("/?yt=")[1] == undefined == false && isUrl(req.url.split("/?yt=")[1]) == true && req.method === "GET") {
+      let linkYt=req.url.split("/?yt=")[1];
       unirest('GET',linkYt)
       .end(function (resku) {
         const dom = new JSDOM(resku.raw_body);
@@ -57,7 +57,7 @@ http.createServer(function (req, res) {
           });
           res.end(beautify(fixData, null, 2, 100));
         }catch(e){
-          res.end("error!");
+          res.end("<h1>OTSEE</h1>");
         };
       });
     } else {
