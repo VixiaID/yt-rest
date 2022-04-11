@@ -61,6 +61,6 @@ http.createServer(function (req, res) {
         };
       });
     } else {
-      res.end("error!");
+      res.end("<h1>OTSEE</h1>");
     };
 }).listen(process.env.PORT);
