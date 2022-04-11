@@ -1,10 +1,9 @@
 {
-  "name": "rest-yt",
+  "name": "yt-rest",
   "version": "1.0.0",
   "description": "Rest yt By OTSEE",
   "main": "index.js",
   "scripts": {
-    "deploy": "npm run build && gh-pages -d dist -t"
   },
   "keywords": [
     "rest yt"
